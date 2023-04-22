@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { UserAuth } from '../context/AuthContext';
+import { UserAuth } from '../../context/AuthContext';
+import "./Navbar.css"
 
 const Navbar = () => {
   const { user, logOut } = UserAuth();
@@ -14,7 +15,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex justify-between bg-gray-200 w-full p-4'>
+    <div className='nav'>
       <h1 className='text-center text-2xl font-bold'>
        Counter-X
       </h1>
