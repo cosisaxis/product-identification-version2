@@ -71,6 +71,9 @@ const Account = ({ onProductSent }) => {
 
   return (
     <div className='form-container'>
+      <div>
+        <p>Welcome, {user?.displayName}</p>
+      </div>
        <h1 className="form-header">Barcode-X</h1>
       <div className="form-group">
         <label>Brand:</label>
@@ -108,13 +111,7 @@ const Account = ({ onProductSent }) => {
         Send Product
       </button>
       {isSubmitting && <p>Sending product to the blockchain...</p>}
-      <h1 className='text-center text-2xl font-bold pt-12'>Account</h1>
-      <div>
-        <p>Welcome, {user?.displayName}</p>
-      </div>
-      <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
-        Logout
-      </button>
+      
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Navbar = () => {
        Counter-X
       </h1>
       {user?.displayName ? (
-        <button  onClick={handleSignOut}>Logout</button>
+        <button className='nav-logout' onClick={handleSignOut}>Logout</button>
       ) : (
         <Link className='nav-button' to='/signin'>Sign in</Link>
       )}

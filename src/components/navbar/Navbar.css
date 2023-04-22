@@ -18,3 +18,16 @@
     cursor: pointer;
     text-align: center;
 }
+
+.nav-logout{
+    display: block;
+    width: 10%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
