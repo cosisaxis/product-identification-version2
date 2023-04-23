@@ -8,7 +8,7 @@
 
 .nav-button{
     display: block;
-    width: 10%;
+    width: 80px;
     padding: 0.5rem;
     border-radius: 0.25rem;
     background-color: red;
@@ -21,7 +21,7 @@
 
 .nav-logout{
     display: block;
-    width: 10%;
+    width: 10px;
     padding: 0.5rem;
     border-radius: 0.25rem;
     background-color: red;
@@ -30,4 +30,10 @@
     border: none;
     cursor: pointer;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-logout{
+        width: 70px;
+    }
 }
