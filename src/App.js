@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Protected from './components/Protected';
+import Footer from './components/footer/Footer';
 import { AuthContextProvider } from './context/AuthContext';
 import Account from './pages/account/Account';
 import Home from './pages/home/Home';
@@ -24,6 +25,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </AuthContextProvider>
     </div>
   );
