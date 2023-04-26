@@ -19,6 +19,9 @@ const Navbar = () => {
       <h1 className='text-center text-2xl font-bold'>
        Counter-X
       </h1>
+      <ul>
+        
+      </ul>
       {user?.displayName ? (
         <button className='nav-logout' onClick={handleSignOut}>Logout</button>
       ) : (

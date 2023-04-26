@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer';
 import { AuthContextProvider } from './context/AuthContext';
 import Account from './pages/account/Account';
 import Home from './pages/home/Home';
-import Signin from './pages/Signin';
+import Signin from './pages/signin/Signin';
 
 function App() {
   return (
