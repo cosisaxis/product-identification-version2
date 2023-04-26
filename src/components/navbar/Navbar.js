@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 import "./Navbar.css"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { user, logOut } = UserAuth();
 
   const handleSignOut = async () => {
@@ -19,14 +20,23 @@ const Navbar = () => {
       <h1 className='text-center text-2xl font-bold'>
        Counter-X
       </h1>
-      <ul>
+      <div className='nav-icon' onClick={() => setIsOpen(!isOpen)}>
+        <div className={isOpen ? 'nav-icon-line open' : 'nav-icon-line'}></div>
+        <div className={isOpen ? 'nav-icon-line open' : 'nav-icon-line'}></div>
+        <div className={isOpen ? 'nav-icon-line open' : 'nav-icon-line'}></div>
+      </div>
         
+      <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
+        {user?.displayName ? (
+          <li><button className='nav-logout' onClick={handleSignOut}>Logout</button></li>
+        ) : (
+          <li><Link className='nav-button' to='/signin'>Sign in</Link></li>
+        )}
       </ul>
-      {user?.displayName ? (
-        <button className='nav-logout' onClick={handleSignOut}>Logout</button>
-      ) : (
-        <Link className='nav-button' to='/signin'>Sign in</Link>
-      )}
+
     </div>
   );
 };
