@@ -1,6 +1,4 @@
-.google-container{
-    
-}
+
 
 
 
@@ -9,8 +7,14 @@
     max-width: 300px;
     border: 2px solid #000;
     padding: 20px;
-    background-color: #fff;
+    background-color: #FA9884;
     margin: 0 auto;
-   
+    border: none; 
+}
+
+.google-button{
+    background-color: #f2f4f7;
+    color: black;
+    padding: 10px 20px;
 }
 
