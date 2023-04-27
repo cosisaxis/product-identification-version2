@@ -17,7 +17,7 @@
     border: none;
     cursor: pointer;
     text-align: center;
-    margin-left: 230px;
+    
 }
 
 .nav-logout{
@@ -114,5 +114,9 @@
 @media screen and (max-width: 768px) {
     .nav-logout{
         width: 70px;
+    }
+
+    .nav-button{
+        margin-left: 230px;
     }
 }
