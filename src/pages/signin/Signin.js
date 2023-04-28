@@ -27,7 +27,7 @@ const Signin = () => {
 
   return (
     <div>
-      <h1 className='text-center text-3xl font-bold py-8'>Sign in</h1>
+      <h1 className='text-center text-3xl font-bold py-8'>Sign in with your google account</h1>
       <div className='google-container'>
       <div className='google-sign'>
         <GoogleButton className='google-btn' onClick={handleGoogleSignIn} />
