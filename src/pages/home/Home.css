@@ -1,10 +1,12 @@
 /* HeroSection.css */
 
+
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+  
   }
   
   .hero-text {
