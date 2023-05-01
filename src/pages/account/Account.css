@@ -67,6 +67,10 @@ body{
 }
 
 @media (max-width: 576px) {
+
+     .form-container{
+      max-width: 360px;
+     } 
     .form-group {
       margin-bottom: 0.75rem;
     }
