@@ -36,7 +36,6 @@ const Navbar = () => {
           <li><Link className='nav-button' to='/signin'>Sign in</Link></li>
         )}
       </ul>
-
     </div>
   );
 };

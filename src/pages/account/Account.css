@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
 
 body{
-    background-color: #FFF3E2;
+  background-color: #EEEEEE;
     font-family: 'Kanit', sans-serif;
 }
 .form-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
-  background-color: #FFE5CA;
+  background-color: #BFDCE5;
   margin-top: 50px;
+  color: #3E54AC;
 }
 .form-group {
   display: flex;
@@ -55,7 +56,7 @@ body{
   width: 100%;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: #FA9884;
+  background-color: #3E54AC;
   color: #fff;
   font-size: 1rem;
   border: none;

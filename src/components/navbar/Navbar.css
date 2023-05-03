@@ -5,7 +5,7 @@
     width: 100px;
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background-color: red;
+    background-color: BFDCE5;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -30,10 +30,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFE5CA;
-    color: #fff;
+    background-color: #EEEEEE;
+    color: black;
     padding: 1rem;
     
+  }
+
+  hr{
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
   }
   
   .nav-icon {
@@ -66,7 +72,7 @@
   }
   
   .nav-links li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
   }
   
